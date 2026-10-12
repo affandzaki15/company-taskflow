@@ -12,6 +12,11 @@ const taskList = document.querySelector("#taskList");
 function renderTasks(items) {
   taskList.innerHTML = "";
 
+  if (items.length === 0) {
+    taskList.textContent = "Tugas tidak ditemukan.";
+    return;
+  }
+
   items.forEach((task) => {
     const li = document.createElement("li");
     li.textContent = task;
