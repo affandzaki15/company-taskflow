@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #222;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
