@@ -8,9 +8,11 @@ const tasks = [
 
 const searchInput = document.querySelector("#searchInput");
 const taskList = document.querySelector("#taskList");
+const taskCount = document.querySelector("#taskCount");
 
 function renderTasks(items) {
   taskList.innerHTML = "";
+  taskCount.textContent = `Total tugas ditemukan: ${items.length}`;
 
   if (items.length === 0) {
     taskList.textContent = "Tugas tidak ditemukan.";
