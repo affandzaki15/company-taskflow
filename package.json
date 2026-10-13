@@ -1,0 +1,12 @@
+{
+  "name": "company-taskflow",
+  "version": "1.0.0",
+  "description": "try to clone in github company",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
