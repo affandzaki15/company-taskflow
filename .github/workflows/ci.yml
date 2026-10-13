@@ -8,7 +8,7 @@ on:
     branches: [main]
 
 jobs:
-  check:
+  quality-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,12 +20,14 @@ jobs:
         with:
           node-version: 22
 
-      - name: Check required files
-        run: |
-          test -f index.html
-          test -f script.js
-          test -f style.css
-          echo "Required files exist"
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Run automated tests
+      - name: Run lint
+        run: npm run lint
+
+      - name: Run tests
         run: npm test
+
+      - name: Run build check
+        run: npm run build
